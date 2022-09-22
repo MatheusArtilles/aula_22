@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+#naveg {
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #6b4e71;
+}
+#naveg .navbar-brand h1 {
+    color: #fff;
+    padding: 10px;
+}
+.navbar-light .navbar-nav .nav-item  .nav-link {
+    margin: 15px;
+    position: relative;
+	color: #fff;
+    font-weight: 700;
+}
+
+.navbar-light .navbar-nav  .nav-link::before {
+    position: absolute;
+    content: '';
+    background-color: #fff;
+    height: 5px;
+    bottom: 0px;
+    width: 0;
+    transition: all .6s ease-in-out;
+}
+.navbar-light .navbar-nav  .nav-link:hover::before {
+    width: 10%;
+}
+.navbar-light .navbar-nav  .nav-link::after {
+    position: absolute;
+    content: '';
+    background-color: #E51B3E;
+    height: 5px;
+    top: 1px;
+    width: 0;
+    transition: all .6s ease-in-out
+}
+.navbar-light .navbar-nav  .nav-link:hover::after {
+    transform: translate(-100%);
+    width: 10%;
+}
+.navbar-light .navbar-nav #link {
+    color: #E51B3E;
+}
+.navbar-light .navbar-nav .nav-item {
+    margin-left: 20px;
+}
+.navbar-light .navbar-toggler {
+    border-color: rgba(255,255,255,.1);
+    margin-right: 20px;
+
+}
+.navbar-light .navbar-toggler i {
+    color: #fff;
+
+}
+#section-1 {
+    padding-top: 80px;
+    width: 100vw;
+    background-color: #c2b2b4;
+    background-attachment: fixed;
+    display: flex;
+    padding-bottom: 50px;
+    align-items: center;
+    justify-content: center;
+    
+}
+#section-1 .text-section {
+    display: flex;
+    margin-top: 90px;
+    color: #fff;
+    flex-direction: column;
+    align-items: center;
+}
+#section-1 .text-section h2 {
+    padding: 20px;
+}
+#section-1 .text-section i {
+    position: relative;
+}
+#section-1 .text-section p {
+    margin-top: 15px;
+}
+.icone {
+    width: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.icone::before {
+    content: '';
+    height: 5px;
+    margin-right: 8px;
+    width: 100px;
+    background-color: #fff;
+}
+ 
+.icone::after {
+    content: '';
+    height: 5px;
+    margin-left: 8px;
+    width: 100px;
+    background-color: #fff;
+
+}
+#section-2 {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+#section-2 .cartao {
+    position: relative;
+    height: 300px;
+    cursor: pointer;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all .6s ease-in-out;
+}
+
+#section-2 .cartao:hover::before {
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    content: '+';
+    font-size: 2rem;
+    color: #fff;
+    left: 0;
+    font-family: "FontAwesome";
+    top: 0;
+    background-color: rgba(107, 78, 113, 0.6);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+#section-2 .cartao h3 {
+    padding: 10px;
+    font-size: 1.3rem;
+}
+.modal .modal-dialog .modal-content .modal-header {
+    border-bottom: none;
+}
+.modal .modal-dialog .modal-content .modal-footer {
+    border-top: none;
+}
+
+.modal .modal-dialog .modal-content .modal-body .container .texto-modal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+}
+.modal .modal-dialog .modal-content .modal-body .container .texto-modal p {
+    margin-top: 35px;
+    color: #6b4e71;
+    font-weight: 600;
+}
+.modal .modal-dialog .modal-content .modal-body .container .texto-modal h2 {
+    padding: 10px;
+    font-size: 2rem;
+    color: #2c3e51;
+}
+
+.modal .modal-dialog .modal-content .modal-body .container .texto-modal .icone-modal {
+    color: #2c3e51;
+}
+
+.modal .modal-dialog .modal-content .modal-body .container .texto-modal .icone-modal::before {
+    
+    background-color: #2c3e51;
+}
+
+.modal .modal-dialog .modal-content .modal-body .container .texto-modal .icone-modal::after {
+    content: '';
+    background-color: #2c3e51;
+
+}
+.modal .modal-dialog .modal-content .modal-footer .container .botao-area {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal .modal-dialog .modal-content .modal-footer .container .botao-area button{
+    width: 150px;
+    border: none;
+    background-color: #6b4e71;
+    border-radius: 12px;
+    color: #fff;
+    padding: 15px;
+    transition: all 0.2s ease-in-out;
+}
+.modal .modal-dialog .modal-content .modal-footer .container .botao-area button:hover {
+    animation: swing 1s ease;
+    animation-iteration-count: 1;
+}
+
+@keyframes swing {
+    15% {
+    transform: translateX(5px);
+    }
+    30% {
+    transform: translateX(-5px);
+    }
+    50% {
+    transform: translateX(3px);
+    }
+    65% {
+    transform: translateX(-3px);
+    }
+    80% {
+    transform: translateX(2px);
+    }
+    100% {
+    transform: translateX(0);
+    }
+}
+@media (min-width: 900px) {
+    #naveg #nav-principal {
+        margin-left: 50%;
+    }
+    .navbar-light .navbar-nav  .nav-link:hover::before {
+        width: 100%;
+    }
+    .navbar-light .navbar-nav  .nav-link:hover::after {
+        transform: translate(-100%);
+        width: 100%;
+    }
+}
